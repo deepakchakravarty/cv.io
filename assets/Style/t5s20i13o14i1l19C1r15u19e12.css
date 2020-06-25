@@ -1,0 +1,35 @@
+.pip {
+  background: #888;
+  border: 2px solid #555;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  margin: 0 .1em;
+  padding: 0;
+  -webkit-transform: scale(.5);
+          transform: scale(.5);
+  -webkit-transition: all .8s cubic-bezier(0,1,.3,1);
+  transition: all .8s cubic-bezier(0,1,.3,1);
+  width: 20px;
+}
+
+.pip.previous, .pip.next {
+  background: #ccc;
+  -webkit-transform: scale(.6);
+          transform: scale(.6);
+}
+
+.pip.current {
+  background: #fff;
+  cursor: default;
+  -webkit-transform: scale(.7);
+          transform: scale(.7);
+}
+
+.pip:not(.current):hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+
